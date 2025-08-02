@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industrial Visit Feedback Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: #ffe6f0; /* Pale pink */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background: #fff;
+            max-width: 500px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin-top: 4px;
+            margin-bottom: 16px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background: #e75480;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d13b6b;
+        }
+        .credit {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 15px;
+            color: #555;
+            font-family: 'Segoe Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="college">College Name:</label><br>
+            <input type="text" id="college" name="college" required><br>
+
+            <label for="class">Class:</label><br>
+            <input type="text" id="class" name="class" required><br>
+
+            <label for="industry">Industrial Name:</label><br>
+            <input type="text" id="industry" name="industry" required><br>
+
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location" required><br>
+
+            <label for="food">How was the food?</label><br>
+            <select id="food" name="food" required>
+                <option value="">Select</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+            </select><br>
+
+            <label for="staff">How were the staff?</label><br>
+            <select id="staff" name="staff" required>
+                <option value="">Select</option>
+                <option value="Very Helpful">Very Helpful</option>
+                <option value="Helpful">Helpful</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Unhelpful">Unhelpful</option>
+            </select><br>
+
+            <label for="learning">What did you learn from the visit?</label><br>
+            <textarea id="learning" name="learning" rows="4" required></textarea><br>
+
+            <label for="suggestions">Any suggestions for improvement?</label><br>
+            <textarea id="suggestions" name="suggestions" rows="3"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="credit">
+        Created by Jeevadharshini G, 2nd year ADS, St. Joseph's Institute of Technology, Chennai
+    </div>
+</body>
+</html>
